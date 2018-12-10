@@ -18,6 +18,10 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # the function below tells the file "name the path webapp"
+    # then in that path include the webapp (the app name) and
+    # what. In this example we see that it is grabbing the information
+    # from the .urls.
     path('webapp/', include('webapp.urls'))
 
 ]
